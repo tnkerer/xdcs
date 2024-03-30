@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  gap: 80px;
+  padding: 75px 25px;
+  background: #000000;
+
+  .sidebarContainer {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    border-right: 1px solid #303030;
+
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      margin-left: 40px;
+      gap: 5px;
+
+      .listItem {
+        font-size: 12px;
+        transition: 0.3s;
+
+        &:hover {
+          cursor: pointer;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
