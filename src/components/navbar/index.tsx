@@ -10,8 +10,11 @@ const Navbar = (props: Props) => {
   return (
     <div className={styles.container}>
       <div className={styles.side}>
-        <Image className={styles.img} width={135} height={45} src={'/assets/xdcslogo.svg'} alt='Logo' />
+        <Link href={'/'}>
+          <Image className={styles.img} width={135} height={45} src={'/assets/brand/xdcslogo.svg'} alt='Logo' />
+        </Link>
       </div>
+      
 
       <div className={styles.side}>
         <Link href={'/privacypolicy'}>
