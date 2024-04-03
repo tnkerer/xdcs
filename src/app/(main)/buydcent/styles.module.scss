@@ -1,0 +1,56 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+  align-items: center; 
+  background-color: black;
+  background-image: url('/assets/backgrounds/staticrainbow.svg');
+  background-position-y: 0%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  .videoContainer {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px;
+
+    .embed {
+      iframe {
+        border-radius: 20px 20px 0px 0px;
+      }
+    }
+
+    .videoFooter {
+      width: 100%;
+      display: flex;
+      gap: 30px;
+      border-radius: 0px 0px 20px 20px;
+      background: #0D0D0D;
+      margin-top: -5px;
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 0px 25px 25px;
+        gap: 25px;
+
+        .title {
+          font-size: 24px;
+          font-weight: 700;
+        }
+
+        .description {
+          line-height: 25px;
+        }
+      }
+
+      .img {
+        transform: translateY(15px);
+        padding-right: 25px;
+      }
+    }
+  }
+}

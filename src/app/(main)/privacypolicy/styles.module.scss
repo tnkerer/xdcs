@@ -7,7 +7,8 @@
 
 
   .sidebarContainer {
-    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -30,6 +31,17 @@
           font-size: 14px;
         }
       }
+    }
+  }
+
+  .textContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    li {
+      margin-left: 25px;
     }
   }
 }
