@@ -13,8 +13,10 @@
     "react": "^18",
     "react-dom": "^18",
     "react-full-page": "^0.1.12",
+    "react-tsparticles": "^2.12.2",
     "sass": "^1.72.0",
-    "swiper": "^11.1.1"
+    "swiper": "^11.1.1",
+    "tsparticles-slim": "^2.12.0"
   },
   "devDependencies": {
     "@types/node": "^20",

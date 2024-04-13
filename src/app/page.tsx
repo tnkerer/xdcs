@@ -4,11 +4,11 @@ import { useEffect, useState } from 'react'
 import { FullPage, Slide } from 'react-full-page'
 import { SlideContext } from '@/contexts/slide-context'
 import styles from './styles.module.scss'
-import HeroSection from '@/components/landing-page/hero'
-import OurMissionSection from '@/components/landing-page/our-mission'
-import WhatWeOfferSection from '@/components/landing-page/what-we-offer'
-import DcentSection from '@/components/landing-page/dcent'
-import HireSection from '@/components/landing-page/hire-services'
+import HeroSection from '@/components/landing-page/sections/hero'
+import OurMissionSection from '@/components/landing-page/sections/our-mission'
+import WhatWeOfferSection from '@/components/landing-page/sections/what-we-offer'
+import DcentSection from '@/components/landing-page/sections/dcent'
+import HireSection from '@/components/landing-page/sections/hire-services'
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
 
@@ -34,31 +34,31 @@ const LandingPage = () => {
         >
           <Navbar />
           <Slide>
-            <div id="heroPage">
+            <div id="heroSection">
               <HeroSection />
             </div>
           </Slide>
 
           <Slide>
-            <div id="aboutUsPage">
+            <div id="ourMissionSection">
               <OurMissionSection />
             </div>
           </Slide>
 
           <Slide>
-            <div id="whatWeDoPage">
+            <div id="whatWeOfferSection">
               <WhatWeOfferSection />
             </div>
           </Slide>
 
           <Slide>
-            <div id="projectsPage">
+            <div id="dcentSection">
               <DcentSection />
             </div>
           </Slide>
 
           <Slide>
-            <div id="metamathPage">
+            <div id="hireSection">
               <HireSection />
             </div>
           </Slide>

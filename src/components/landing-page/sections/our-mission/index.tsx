@@ -16,6 +16,18 @@ const OurMissionSection = (props: Props) => {
         <div className={styles.card}>
           <Card />
         </div>
+
+        <div className={styles.card}>
+          <Card />
+        </div>
+
+        <div className={styles.card}>
+          <Card />
+        </div>
+
+        <div className={styles.card}>
+          <Card />
+        </div>
       </div>
     </div>
   )
