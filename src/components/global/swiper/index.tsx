@@ -24,11 +24,11 @@ export default function App() {
         pagination={true}
         mousewheel={true}
         keyboard={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        className="mySwiper"
+        modules={[Navigation, Mousewheel, Keyboard]}
+        className={styles.mySwiper}
       >
-        <SwiperSlide>
-          <Image src={'assets/swiper/1.svg'} alt='Swiper' height={100} width={100} />
+        <SwiperSlide className={styles.swiperSlide}>
+          <Image className={styles.img} src={'assets/swiper/1.svg'} alt='Swiper' height={350} width={350} />
           <div className={styles.title}>
             Private Staking Partner
           </div>
@@ -38,10 +38,10 @@ export default function App() {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide>
-          <Image src={'assets/swiper/1.svg'} alt='Swiper' height={100} width={100} />
+        <SwiperSlide className={styles.swiperSlide}>
+          <Image className={styles.img} src={'assets/swiper/2.svg'} alt='Swiper' height={350} width={350} />
           <div className={styles.title}>
-            Private Staking Partner
+            Smart Contract Development
           </div>
 
           <div className={styles.description}>
@@ -49,10 +49,10 @@ export default function App() {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide>
-          <Image src={'assets/swiper/1.svg'} alt='Swiper' height={100} width={100} />
+        <SwiperSlide className={styles.swiperSlide}>
+          <Image className={styles.img} src={'assets/swiper/3.svg'} alt='Swiper' height={350} width={350} />
           <div className={styles.title}>
-            Private Staking Partner
+            Tokenization of RWA
           </div>
 
           <div className={styles.description}>
@@ -60,10 +60,10 @@ export default function App() {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide>
-          <Image src={'assets/swiper/1.svg'} alt='Swiper' height={100} width={100} />
+        <SwiperSlide className={styles.swiperSlide}>
+          <Image className={styles.img} src={'assets/swiper/4.svg'} alt='Swiper' height={350} width={350} />
           <div className={styles.title}>
-            Private Staking Partner
+            Node Hosting Services
           </div>
 
           <div className={styles.description}>

@@ -9,8 +9,6 @@ const DcentSection = (props: Props) => {
   return (
     <div className={styles.container}>
       <div className={styles.centerContainer}>
-        <div />
-
         <div className={styles.buyBox}>
           <div className={styles.title}>
             D'CENT Biometric Wallet Safeguard Your Crypto Journey
@@ -30,6 +28,8 @@ const DcentSection = (props: Props) => {
             </div>
           </div>
         </div>
+
+        <div />
       </div>
     </div>
   )

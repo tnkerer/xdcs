@@ -1,7 +1,19 @@
 .container {
-  
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  .title {
+    font-weight: 120;
+    font-size: 36px;
+  }
+
   .slider {
-    position: relative;
-    width: 200px;
+    
+    width: 400px;
   }
 }
