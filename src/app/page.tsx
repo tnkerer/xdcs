@@ -63,9 +63,9 @@ const LandingPage = () => {
             </div>
           </Slide>
 
-          <Slide>
-            <Footer />
-          </Slide>
+            <Slide>
+                <Footer isLandingPage={true} />
+            </Slide>
         </FullPage>
       </div>
     </SlideContext.Provider>

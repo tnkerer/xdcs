@@ -4,11 +4,13 @@ import styles from './styles.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
 
-type Props = {}
+type Props = {
+  isLandingPage: boolean
+}
 
-const Footer = (props: Props) => {
+const Footer = ({isLandingPage}: Props) => {
   return (
-    <div className={styles.container}>
+    <div className={isLandingPage == true ? styles.lpContainer : styles.container}>
       <div className={styles.socialContainer}>
         <div className={styles.social}>
           <Link href={'https://twitter.com/xinfin_official'}>
