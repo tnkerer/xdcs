@@ -17,7 +17,7 @@ const HireSection = (props: Props) => {
       </div>
 
       <div className={styles.button}>
-        Don't waste time click here
+        Don&lsquo;t waste time click here
       </div>
     </div>
   )

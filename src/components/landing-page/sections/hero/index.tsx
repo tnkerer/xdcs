@@ -54,7 +54,7 @@ const particlesLoaded = useCallback(async (container: any) => {
         </div>
 
         <div className={styles.button}>
-          Let's Build
+          Let&lsquo;s Build
         </div>
       </div>
 

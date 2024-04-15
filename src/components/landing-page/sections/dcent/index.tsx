@@ -12,11 +12,11 @@ const DcentSection = (props: Props) => {
       <div className={styles.centerContainer}>
         <div className={styles.buyBox}>
           <div className={styles.title}>
-            D'CENT Biometric Wallet Safeguard Your Crypto Journey
+            D&lsquo;CENT Biometric Wallet Safeguard Your Crypto Journey
           </div>
 
           <div className={styles.description}>
-            Seize your crypto future with the D'CENT Biometric Wallet – a cutting-edge hardware wallet ledger solution that unites self-custody, security, and user-friendly features for over 3,000 cryptocurrencies. 
+            Seize your crypto future with the D&lsquo;CENT Biometric Wallet – a cutting-edge hardware wallet ledger solution that unites self-custody, security, and user-friendly features for over 3,000 cryptocurrencies. 
           </div>
 
           <div className={styles.buttons}>
