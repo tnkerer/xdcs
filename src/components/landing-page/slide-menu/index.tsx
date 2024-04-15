@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { useContext, useEffect, useState } from 'react'
-import { SlideContext } from '../../../../../contexts/SlideContext'
+import { SlideContext } from '../../../contexts/slide-context'
 
 import line from './assets/line.svg'
 import scrollimg from './assets/scroll.svg'
