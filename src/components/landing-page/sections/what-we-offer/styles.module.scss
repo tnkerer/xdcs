@@ -7,13 +7,20 @@
   align-items: center;
   gap: 25px;
 
+  @media (min-width: 1400px) {
+    gap: 100px;
+   }
+
   .title {
-    font-weight: 120;
+    font-weight: 600;
     font-size: 36px;
   }
 
   .slider {
-    
     width: 400px;
+  
+    @media (min-width: 1400px) {
+      transform: scale(1.4);
+     }
   }
 }

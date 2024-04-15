@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 import styles from './styles.module.scss'
@@ -19,16 +20,19 @@ const DcentSection = (props: Props) => {
           </div>
 
           <div className={styles.buttons}>
-            <div className={styles.button}>
-              More info
-            </div>
+            <Link href={'/buydcent'}>
+              <div className={styles.button}>
+                More info
+              </div>
+            </Link>
 
             <div className={styles.button}>
-              <Image width={20} height={20} src={'assets/icons/cart.svg'} alt='Buy' />
+              <Link href={'/buydcent'}>
+                <Image width={20} height={20} src={'assets/icons/cart.svg'} alt='Buy' />
+              </Link>
             </div>
           </div>
         </div>
-
         <div />
       </div>
     </div>

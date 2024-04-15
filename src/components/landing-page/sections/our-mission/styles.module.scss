@@ -7,16 +7,31 @@
   align-items: center;
   gap: 50px;
 
+  @media (min-width: 1400px) {
+    gap: 100px;
+   }
+
   .title {
-    font-weight: 120;
+    font-weight: 600;
     font-size: 36px;
+
+    @media (min-width: 1400px) {
+      transform: scale(1.1);
+     }
   }
 
   .cardsContainer {
-    width: 1000px;
+    width: 1200px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    
+    gap: 25px;
+
+    @media (min-width: 1400px) {
+      transform: scale(1.1);
+     }
+
     .card {
       width: 500px;
     }

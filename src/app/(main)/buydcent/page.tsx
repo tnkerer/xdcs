@@ -31,11 +31,10 @@ const BuyDcentPage = (props: Props) => {
       </div>
 
       <div className={styles.buyContainer}>
-        <div className={styles.card}>
           <div className={styles.img}>
             <Image width={100} height={180} src={'/assets/dcent/oneunit.svg'} alt='Preview' />
           </div>
-
+        <div className={styles.card}>
           <div className={styles.titlePrice}>
             <div className={styles.title}>
               Biometric Wallet
@@ -54,11 +53,11 @@ const BuyDcentPage = (props: Props) => {
             Single
           </div>
         </div>
+          <div className={styles.img}>
+            <Image width={160} height={180} src={'/assets/dcent/twounit.svg'} alt='Preview' />
+          </div>
 
         <div className={styles.card}>
-          <div className={styles.img}>
-            <Image width={100} height={180} src={'/assets/dcent/oneunit.svg'} alt='Preview' />
-          </div>
 
           <div className={styles.titlePrice}>
             <div className={styles.title}>
@@ -75,7 +74,7 @@ const BuyDcentPage = (props: Props) => {
           </div>
 
           <div className={styles.button}>
-            Single
+            Duo
           </div>
         </div>
       </div>

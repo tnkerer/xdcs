@@ -14,19 +14,19 @@ const Footer = ({isLandingPage}: Props) => {
       <div className={styles.socialContainer}>
         <div className={styles.social}>
           <Link href={'https://twitter.com/xinfin_official'}>
-            <Image width={32} height={32} src={'/assets/social/twitter.svg'} alt='' />
+            <Image className={styles.img} width={32} height={32} src={'/assets/social/twitter.svg'} alt='' />
           </Link>
         </div>
 
         <div className={styles.social}>
           <Link href={'https://www.instagram.com/xinfin_xdc_network/'}>
-            <Image width={32} height={32} src={'/assets/social/insta.svg'} alt='' />
+            <Image className={styles.img} width={32} height={32} src={'/assets/social/insta.svg'} alt='' />
           </Link>
         </div>
 
         <div className={styles.social}>
           <Link href={'https://t.me/xinfintalk'}>
-            <Image width={32} height={32} src={'/assets/social/telegram.svg'} alt='' />
+            <Image className={styles.img} width={32} height={32} src={'/assets/social/telegram.svg'} alt='' />
           </Link>
         </div>
       </div>

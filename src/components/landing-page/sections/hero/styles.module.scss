@@ -13,8 +13,12 @@
     align-items: center;
     gap: 25px;
 
+    @media (min-width: 1400px) {
+      transform: scale(1.5);
+    }
+
     .title {
-      font-weight: 130;
+      font-weight: 500;
       color: white;
       font-size: 50px;
       text-align: center;
@@ -37,7 +41,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 16px 20px;
+      padding: 10px 20px;
       background: rgba(255, 255, 255, 0.1);
       transition: 0.4s;
 
@@ -53,7 +57,12 @@
     overflow: hidden; /* Oculte qualquer conteúdo que ultrapasse os limites do contêiner */
     white-space: nowrap; /* Impede que os logotipos se quebrem em várias linhas */
     position: relative; /* Adicione posição relativa para manter os logotipos dentro do contêiner */
-    
+    margin-bottom: 50px;
+    @media (min-width: 1400px) {
+      width: 98vw;
+     
+    }
+
     .title {
       text-align: center;
       margin-bottom: 25px;
@@ -83,7 +92,7 @@
         transform: translateX(0);
       }
       100% {
-        transform: translateX(-50%); /* Ajuste para garantir que os logotipos se movam corretamente */
+        transform: translateX(-31.5%); /* Ajuste para garantir que os logotipos se movam corretamente */
       }
     }
   }

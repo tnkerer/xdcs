@@ -14,19 +14,19 @@ const OurMissionSection = (props: Props) => {
 
       <div className={styles.cardsContainer}>
         <div className={styles.card}>
-          <Card />
+          <Card icon='assets/icons/globe.svg' title='Lorem Ipsum' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' />
         </div>
 
         <div className={styles.card}>
-          <Card />
+          <Card icon='assets/icons/security.svg' title='Lorem Ipsum' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' />
         </div>
 
         <div className={styles.card}>
-          <Card />
+          <Card icon='assets/icons/lamp.svg' title='Lorem Ipsum' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' />
         </div>
 
         <div className={styles.card}>
-          <Card />
+          <Card icon='assets/icons/rocket.svg' title='Lorem Ipsum' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' />
         </div>
       </div>
     </div>

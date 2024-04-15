@@ -7,17 +7,29 @@
   align-items: center;
   gap: 25px;
 
+  @media (min-width: 1400px) {
+    gap: 62px;
+   }
+
   .title {
-    font-weight: 130;
+    font-weight: 600;
     color: white;
     font-size: 50px;
     text-align: center;
+
+    @media (min-width: 1400px) {
+      transform: scale(1.4);
+     }
   }
 
   .description {
     width: 450px;
     text-align: center;
-    font-weight: 90;
+    font-weight: 300;
+
+    @media (min-width: 1400px) {
+      transform: scale(1.4);
+     }
   }
 
   .button {
@@ -28,7 +40,11 @@
     border-radius: 100px;
     background: rgba(255, 255, 255, 0.1);
     transition: 0.4s;
-    font-weight: 90;
+
+    @media (min-width: 1400px) {
+      transform: scale(1.4);
+      font-weight: 300;
+     }
 
     &:hover {
       cursor: pointer;
