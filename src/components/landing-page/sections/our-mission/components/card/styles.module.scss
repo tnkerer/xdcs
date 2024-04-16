@@ -17,6 +17,10 @@
         background: rgba(65, 176, 255, 0.486);
         border-radius: 100px;
         z-index: -1;
+
+        &:last-child {
+          border-radius: 13px;
+        }
       }
     }
   }
