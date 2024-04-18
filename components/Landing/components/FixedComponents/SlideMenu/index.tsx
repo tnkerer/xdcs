@@ -45,6 +45,7 @@ const SlideBar = () => {
               }}
             />
           </div>
+
           <div className={styles.columnContainer}>
             <div className={styles.text}>
               {actualSlide == 1 ? 'About Us' : ''}
@@ -66,7 +67,7 @@ const SlideBar = () => {
 
           <div className={styles.columnContainer}>
             <div className={styles.text}>
-              {actualSlide == 2 && 'What We Do'}
+              {actualSlide == 2 && 'Dcent'}
             </div>
             <div
               className={
@@ -84,10 +85,29 @@ const SlideBar = () => {
           </div>
 
           <div className={styles.columnContainer}>
-            <div className={styles.text}>{actualSlide == 3 && 'Footer'}</div>
+            <div className={styles.text}>
+              {actualSlide == 3 && 'What We Do'}
+            </div>
             <div
               className={
                 actualSlide == 3 ? styles.selected : styles.notSelected
+              }
+              onClick={() => {
+                const element = document.getElementById('whatWeDoPage')
+
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' })
+                }
+                setActualSlide(3)
+              }}
+            />
+          </div>
+
+          <div className={styles.columnContainer}>
+            <div className={styles.text}>{actualSlide == 4 && 'Footer'}</div>
+            <div
+              className={
+                actualSlide == 4 ? styles.selected : styles.notSelected
               }
               onClick={() => {
                 const element = document.getElementById('footerPage')
@@ -95,7 +115,7 @@ const SlideBar = () => {
                 if (element) {
                   element.scrollIntoView({ behavior: 'smooth' })
                 }
-                setActualSlide(3)
+                setActualSlide(4)
               }}
             />
           </div>

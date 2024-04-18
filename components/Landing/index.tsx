@@ -8,6 +8,7 @@ import Hero from './components/Hero'
 import Footer from './components/Footer'
 import WhatWeDo from './components/WhatWeDo'
 import styles from './styles.module.scss'
+import DcentSection from './components/Dcent'
 
 interface SlideDataType {
   from: number
@@ -41,6 +42,12 @@ const LandingPage = () => {
           <Slide>
             <div id="aboutUsPage">
               <AboutUs />
+            </div>
+          </Slide>
+
+          <Slide>
+            <div>
+              <DcentSection />
             </div>
           </Slide>
 
