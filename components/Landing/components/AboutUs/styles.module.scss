@@ -1,0 +1,15 @@
+.container {
+  height: 100vh;
+  background-image: url('./assets/AUbackground.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (max-width: 1150px) {
+    background-image: url('./assets/AUbackground.webp');
+    background-position: 100%;
+    background-size: cover;
+  }
+}

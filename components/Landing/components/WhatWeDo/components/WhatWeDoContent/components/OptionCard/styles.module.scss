@@ -1,0 +1,102 @@
+.container {
+  height: auto;
+
+  .title {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 18px;
+
+    @media (max-width: 950px) {
+      display: none;
+    }
+  }
+
+  .centerContainer {
+    display: flex;
+    justify-content: center;
+    
+    .imageContainer {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+
+      @media (max-width: 950px) {
+        max-width: 200px;
+        margin-bottom: 0px;
+      }
+
+      @media (max-width: 550px) {
+        max-width: 150px;
+      }
+    }
+  }
+
+  .titleContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    @media (max-width: 950px) {
+      display: none;
+    }
+  }
+
+  .descriptionContainer {
+    height: 100px;
+    padding: 0px 30px 0px 30px;
+    text-align: center;
+    font-weight: 200;
+    font-size: 13px;
+
+    @media (max-width: 1200px) {
+      height: 150px;
+    }
+
+    @media (max-width: 950px) {
+      font-size: 13px;
+      padding: 0px;
+      font-weight: 300;
+      height: auto;
+    }
+
+    @media (max-width: 550px) {
+      font-size: 11px;
+    }
+  }
+
+  .optionsContainer {
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+
+    @media (max-width: 950px) {
+      margin-top: 10px;
+    }
+
+    .selectedOptions {
+      cursor: pointer;
+      width: 10px;
+      height: 10px;
+      background-color: #41Afff; 
+      border-radius: 5px;
+      z-index: 10;
+    }
+
+    .options {
+      cursor: pointer;
+      width: 10px;
+      height: 10px;
+      background-color: white;  
+      border-radius: 5px;
+      z-index: 10;
+
+      @media (max-width: 950px) {
+        width: 7px;
+        height: 7px;
+      }
+    }
+  }
+}
