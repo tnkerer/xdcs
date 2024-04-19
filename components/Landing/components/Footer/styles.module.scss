@@ -129,4 +129,60 @@
       }
     }
   }
+
+  .logosContainer {
+    position: absolute;
+    left: 0;
+    margin-bottom: -30px;
+    bottom: 0;
+
+    @media (min-width: 1400px) {
+      margin-bottom: 30px;
+    }
+
+    .partnersContainer {
+      width: 98vw; /* Defina uma largura para o contêiner */
+      overflow: hidden; /* Oculte qualquer conteúdo que ultrapasse os limites do contêiner */
+      white-space: nowrap; /* Impede que os logotipos se quebrem em várias linhas */
+      position: relative; /* Adicione posição relativa para manter os logotipos dentro do contêiner */
+      margin-bottom: 50px;
+      @media (min-width: 1400px) {
+        width: 98vw;
+       
+      }
+  
+      .title {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+  
+      .logoContainerWrapper {
+        width: 200%; /* Ajuste para acomodar todos os logotipos */
+        display: flex; /* Altere o display para flex */
+        animation: moveRight 15s linear infinite; /* Ajuste a velocidade conforme necessário */
+        overflow: hidden; 
+      }
+    
+      .logo-container {
+        width: 100%; /* Defina uma largura para o contêiner */
+        display: flex; /* Altere o display para flex */
+        overflow: hidden; 
+      }
+      
+      img {
+        margin-right: 20px; /* Espaçamento entre os logotipos */
+        width: 150px; /* Defina uma largura fixa para os logotipos */
+        height: auto; /* Mantenha a proporção da imagem */
+      }
+      
+      @keyframes moveRight {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-31.5%); /* Ajuste para garantir que os logotipos se movam corretamente */
+        }
+      }
+    }
+  }
 }

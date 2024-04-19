@@ -67,7 +67,7 @@ const SlideBar = () => {
 
           <div className={styles.columnContainer}>
             <div className={styles.text}>
-              {actualSlide == 2 && 'Dcent'}
+              {actualSlide == 2 && 'What We Do'}
             </div>
             <div
               className={
@@ -86,7 +86,7 @@ const SlideBar = () => {
 
           <div className={styles.columnContainer}>
             <div className={styles.text}>
-              {actualSlide == 3 && 'What We Do'}
+              {actualSlide == 3 && 'Dcent'}
             </div>
             <div
               className={

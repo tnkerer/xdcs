@@ -6,6 +6,7 @@ export enum CTAType {
   REQUEST_SERVICES = 'request_services',
   LEARN_MORE = 'learn_more',
   VIEW = 'view',
+  BUY = 'buy'
 }
 
 interface ComponentType {
@@ -30,6 +31,10 @@ const CTA: React.FC<ComponentType> = (props: ComponentType) => {
               element.current.style.marginLeft = '0'
               element.current.style.marginRight = '79px'
             } else if (buttonType === 'view') {
+              element.current.style.width = '277px'
+              element.current.style.marginLeft = '0'
+              element.current.style.marginRight = '79px'
+            } else if (buttonType === 'buy') {
               element.current.style.width = '277px'
               element.current.style.marginLeft = '0'
               element.current.style.marginRight = '79px'
@@ -63,6 +68,10 @@ const CTA: React.FC<ComponentType> = (props: ComponentType) => {
               element.current.style.width = '0px'
               element.current.style.marginLeft = '198px'
               element.current.style.marginRight = '0'
+            } else if (buttonType === 'buy') {
+              element.current.style.width = '0px'
+              element.current.style.marginLeft = '158px'
+              element.current.style.marginRight = '0'
             }
           }
           break
@@ -85,10 +94,10 @@ const CTA: React.FC<ComponentType> = (props: ComponentType) => {
             animate('LEAVE', props.type)
           }}
           onClick={() =>
-            window.open('https://t0ftgnz1h0u.typeform.com/to/HovsEUgL')
+            window.open('/contact', '_self')
           }
         >
-          <div className={styles.text}>LET'S BUILD</div>
+          <div className={styles.text}>LET&apos;S BUILD</div>
           <div className={styles.divisor} ref={element} />
           <div className={styles.arrow}>
             <img src="/images/arrow.svg" alt="Arrow" />
@@ -105,7 +114,7 @@ const CTA: React.FC<ComponentType> = (props: ComponentType) => {
           onMouseLeave={() => {
             animate('LEAVE', props.type)
           }}
-          onClick={() => window.open('https://github.com/metamathstudios')}
+          onClick={() => window.open('https://github.com/')}
         >
           <div className={styles.text}>LEARN MORE</div>
           <div className={styles.divisor} ref={element} />
@@ -128,6 +137,27 @@ const CTA: React.FC<ComponentType> = (props: ComponentType) => {
         >
           <div className={styles.text}>
             VIEW MORE ON {getHostname(props.link!).toUpperCase()}
+          </div>
+          <div className={styles.divisor} ref={element} />
+          <div className={styles.arrow}>
+            <img src="/images/arrow.svg" alt="Arrow" />
+          </div>
+        </div>
+      )}
+
+{props.type === 'buy' && (
+        <div
+          className={styles.view}
+          onMouseEnter={() => {
+            animate('JOIN', props.type)
+          }}
+          onMouseLeave={() => {
+            animate('LEAVE', props.type)
+          }}
+          onClick={() => window.open(props.link)}
+        >
+          <div className={styles.text}>
+            Learn More
           </div>
           <div className={styles.divisor} ref={element} />
           <div className={styles.arrow}>

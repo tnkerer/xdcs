@@ -10,11 +10,11 @@
   background-repeat: no-repeat;
   
   .centerContainer {
-    width: 1100px;
+    width: 1065px;
     height: 500px;
     display: flex;
     justify-content: space-between;
-    background-image: url('../../../../public/assets/backgrounds/dcentbg.svg');
+    background-image: url('../../../../public/assets/backgrounds/dcentbg.png');
     background-size: 90%;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -30,14 +30,44 @@
       flex-direction: column;
       justify-content: center;
       gap: 25px;
+      margin-left: 80px;
 
       .title {
-        font-size: 24px;
-        font-weight: 500;
+        font-size: 45px;
+        font-weight: 600;
+        line-height: 42px;
+        margin-bottom: 15px;
+
+        @media (max-width: 1150px) {
+          font-size: 30px;
+          line-height: 30px;
+          margin-bottom: 15px;
+        }
+
+        @media (max-width: 550px) {
+          font-size: 30px;
+          line-height: 30px;
+        }
+
+        @media (max-height: 600px) {
+          font-size: 25px;
+          line-height: 25px;
+        }
       }
 
       .description {
-        font-weight: 70;
+        font-weight: 200;
+        font-size: 15px;
+        margin-bottom: 10px;
+
+        @media (max-width: 1150px) {
+          font-size: 12px;
+        }
+
+        @media (max-width: 550px) {
+          font-size: 10px;
+          font-weight: 300;
+        }
       }
 
       .buttons {

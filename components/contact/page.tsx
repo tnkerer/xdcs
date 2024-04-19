@@ -70,7 +70,16 @@ const ContactPage = (props: Props) => {
           </div>
 
           <div className={styles.inputHTML}>
-            <input type="text" placeholder='Type here...' />
+            <div className={styles.input}>
+            <textarea
+              /* value={value}
+              onChange={handleChange} */
+              className={styles.input}
+              rows={4}
+              cols={48}
+              placeholder="Enter your text here..."
+            />
+            </div>
           </div>
         </div>
 

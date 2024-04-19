@@ -11,13 +11,13 @@ const Navbar = (props: Props) => {
     <div className={styles.container}>
       <div className={styles.side}>
         <Link href={'/'}>
-          <Image className={styles.img} width={100} height={45} src={'/assets/brand/logo.svg'} alt='Logo' />
+          <Image className={styles.img} width={100} height={45} src={'/assets/brand/logo_orig.svg'} alt='Logo' />
         </Link>
       </div>
       
 
       <div className={styles.side}>
-        <Link href={'/privacypolicy'}>
+        <Link href={'/policy'}>
           <div className={styles.button}>
             Privacy Policy
           </div>

@@ -65,25 +65,7 @@ const HeroContent = () => {
           </div>
         </div>
       </div>
-      
-      <div className={styles.logosContainer}>
-      <div className={styles.partnersContainer}>
-        <div className={styles.title}>
-          In Collaboration With:
-        </div>
-
-        <div className={styles.logoContainerWrapper}>
-          <div className={styles.logoContainer} ref={containerRef}>
-            {logos.map((logo, index) => (
-              <img key={index} src={`assets/partners/${logo}`} alt={`Logo ${index}`} style={{ width: logoWidth }} />
-            ))}
-            {logos.map((logo, index) => (
-              <img key={index + logos.length} src={`assets/partners/${logo}`} alt={`Logo ${index}`} style={{ width: logoWidth }} />
-            ))}
-            </div>
-          </div>
-        </div>
-      </div>
+    
 
       <div className={styles.particlesJs}>
         <Particles

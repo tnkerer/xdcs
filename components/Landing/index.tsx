@@ -46,14 +46,14 @@ const LandingPage = () => {
           </Slide>
 
           <Slide>
-            <div>
-              <DcentSection />
+            <div id="whatWeDoPage">
+              <WhatWeDo />
             </div>
           </Slide>
 
           <Slide>
-            <div id="whatWeDoPage">
-              <WhatWeDo />
+            <div>
+              <DcentSection />
             </div>
           </Slide>
 

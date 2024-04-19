@@ -43,19 +43,30 @@ const Sidebar: React.FC = () => {
         <div className={styles.menu}>
           <div
             className={styles.item}
-            onMouseEnter={() => animate('JOIN', animateNavItem03)}
-            onMouseLeave={() => animate('LEAVE', animateNavItem03)}
+            onMouseEnter={() => animate('JOIN', animateNavItem01)}
+            onMouseLeave={() => animate('LEAVE', animateNavItem01)}
             onClick={() => {
-              window.open('https://t0ftgnz1h0u.typeform.com/to/BW1MehM5')
+              window.open('/buydcent', '_self')
             }}
           >
-            <span>Join the Team</span>
-            <div className={styles.animated} ref={animateNavItem03} />
+            <span>D&apos;cent Wallet</span>
+            <div className={styles.animated} ref={animateNavItem01} />
+          </div>
+          <div
+            className={styles.item}
+            onMouseEnter={() => animate('JOIN', animateNavItem02)}
+            onMouseLeave={() => animate('LEAVE', animateNavItem02)}
+            onClick={() => {
+              window.open('/contact', '_self')
+            }}
+          >
+            <span>Contact Us</span>
+            <div className={styles.animated} ref={animateNavItem02} />
           </div>
         </div>
 
         <div className={styles.buttonWrapper}>
-          <div
+          {/* <div
             className={styles.button}
             id="sidebarButton"
             onMouseEnter={() => {
@@ -69,11 +80,11 @@ const Sidebar: React.FC = () => {
               button.style.backgroundColor = 'transparent'
             }}
             onClick={() =>
-              window.open('https://t0ftgnz1h0u.typeform.com/to/HovsEUgL')
+              window.open('/contact', '_self')
             }
           >
             Request our services
-          </div>
+          </div> */}
         </div>
 
         <div className={styles.footer}>
@@ -89,19 +100,21 @@ const Sidebar: React.FC = () => {
               }}
             />
             <img
-              src="/images/linkedin.svg"
-              alt="Linkedin"
+              src="/images/telegram.svg"
+              alt="Telegram"
               onClick={() => {
                 window
                   ? window.open(
-                      'https://www.linkedin.com/company/metamathstudios/'
+                      'https://t.me/+z36uMSBnhtMwYmZh'
                     )
                   : null
               }}
             />
           </div>
           <div className={styles.links}>
-            <span>Terms of service</span> - <span>Privacy policy</span>
+            <span onClick={() => {
+              window.open('/policy', '_self')
+            }}>Privacy policy</span>
           </div>
           <div className={styles.copy}>© 2024 X Digital Capital Solutions</div>
         </div>

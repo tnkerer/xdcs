@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 import styles from './styles.module.scss'
 
-import nft from './assets/nft.svg'
-import sc from './assets/sc.svg'
-import smartphone from './assets/smartphone.svg'
+import nft from './assets/rwa.png'
+import sc from './assets/sc.png'
+import smartphone from './assets/smart.png'
 
 import { useState } from 'react'
 
@@ -14,33 +14,29 @@ const OptionsCard = () => {
   
   return (
     <div className={styles.container}>
-      <div className={styles.title}>
-        Some of our services
-      </div>
-
       <div className={styles.centerContainer}>
         <div className={styles.imageContainer}>
-          <Image src={option} alt='Services' width={300} height={300}/>
+          <Image src={option} alt='Services' width={300} height={240}/>
         </div>
       </div>
 
       <div className={styles.titleContainer}>
-        {option == nft ? 'NFT Art Generation' : null}
+        {option == nft ? 'RWA Tokenization' : null}
         {option == sc ? 'Smart Contracts' : null}
-        {option == smartphone ? 'Descentralized Apps' : null}
+        {option == smartphone ? 'Private Staking Partner' : null}
       </div>
 
       <div className={styles.descriptionContainer}>
         {option == nft ? 
-          'Pioneering NFT Art Generation programmatically, you will count on what is more recent in art generation technology. From Al-generated art to procedurally generated NFTs. We will help you launch your NFT collection following the best market standards so you can go from idea to market in no time.'
+          'RWA Tokenization comes in many shapes and sizes. Utilizing blockchain technology we can take any physical asset and convert its value to a digital form. This opens up a new world of possibilities for any traditional asset class.'
         : null}
 
         {option == sc ? 
-          'Following Ethereum Smart Contract best practices, our Solidity-based programs can be replicated in any EVM-compatible network such as Polygon, Binance Smart Chain, Harmony ONE, Avalanche, Moonbeam/Moonriver, Gnosis Chain, and many others.'
+          'Lets work together to build your very own custom blockchain solution, tailored to your ideas and ambitions. At XDCS we offer the necessary tool kits to digitize your Web2 business.'
         : null}
 
         {option == smartphone ? 
-          'We provide all services necessary to bring your decentralized app up and running, from Ul design to backend infrastructure. We will manage all the steps to get your idea to life. Already have an App and want to plug it into a blockchain? We provide you with the tools to do so!'
+          'Institutions, Enterprises and Family Offices are taking notice of Web3 solutions for wealth management. Diversify your portfolio into digital assets with XDCS today.'
         : null}
       </div>
 

@@ -10,7 +10,13 @@ const BuyDcentPage = (props: Props) => {
     <div className={styles.container}>
       <div className={styles.videoContainer}>
         <div className={styles.embed}>
-          <iframe width="1000" height="577" src="https://www.youtube.com/embed/izGwDsrQ1eQ" title="George Michael - Careless Whisper (Official Video)" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+          {/* <iframe width="1000" height="577" src="https://www.youtube.com/embed/izGwDsrQ1eQ" title="George Michael - Careless Whisper (Official Video)" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
+          <video width="1000" height="577" controls>
+            <source src="assets/dcent/dcent.mp4" type="video/mp4" />
+            {/* Add additional source elements for other video formats if needed */}
+            Your browser does not support the video tag.
+          </video>
+
         </div>
 
         <div className={styles.videoFooter}>
@@ -25,15 +31,15 @@ const BuyDcentPage = (props: Props) => {
           </div>
 
           <div className={styles.img}>
-            <Image width={207} height={186} src={'/assets/dcent/demonstration.svg'} alt='Dcent' />
+            <Image width={187} height={186} src={'/assets/dcent/demonstration.svg'} alt='Dcent' />
           </div>
         </div>
       </div>
 
       <div className={styles.buyContainer}>
-          <div className={styles.img}>
-            <Image width={100} height={180} src={'/assets/dcent/oneunit.svg'} alt='Preview' />
-          </div>
+        <div className={styles.img}>
+          <Image width={100} height={180} src={'/assets/dcent/oneunit.svg'} alt='Preview' />
+        </div>
         <div className={styles.card}>
           <div className={styles.titlePrice}>
             <div className={styles.title}>
@@ -49,13 +55,15 @@ const BuyDcentPage = (props: Props) => {
             Biometric Auth - Certified EAL5+ - NFT’s - Bluetooth - iOS & Android - dApp Browser - 3000+ Coins - Large Display - Convenient Update
           </div>
 
-          <div className={styles.button}>
+          <div className={styles.button} onClick={() => {
+            window.open('https://store.dcentwallet.com/products/biometric-wallet-xdcs?utm_source=yt_xdcs&utm_medium=affiliate&utm_campaign=202302_xdcs_v01', '_blank')
+          }}>
             Single
           </div>
         </div>
-          <div className={styles.img}>
-            <Image width={160} height={180} src={'/assets/dcent/twounit.svg'} alt='Preview' />
-          </div>
+        <div className={styles.img}>
+          <Image width={160} height={180} src={'/assets/dcent/twounit.svg'} alt='Preview' />
+        </div>
 
         <div className={styles.card}>
 
@@ -73,8 +81,10 @@ const BuyDcentPage = (props: Props) => {
             Biometric Auth - Certified EAL5+ - NFT’s - Bluetooth - iOS & Android - dApp Browser - 3000+ Coins - Large Display - Convenient Update
           </div>
 
-          <div className={styles.button}>
-            Duo
+          <div className={styles.button} onClick={() => {
+            window.open('https://store.dcentwallet.com/products/biometric-wallet-2x-package-xdcs?utm_source=yt_xdcs&utm_medium=affiliate&utm_campaign=202302_xdcs_v01', '_blank')
+          }}>
+            Double Pack
           </div>
         </div>
       </div>

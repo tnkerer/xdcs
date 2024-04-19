@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { useContext } from 'react'
 import { SidebarContext } from '../../../../../../contexts/Sidebar'
 
-import logo from './assets/logo.svg'
+import logo from './assets/logo_orig.svg'
 import menu from './assets/menu.svg'
 
 import styles from './styles.module.scss'

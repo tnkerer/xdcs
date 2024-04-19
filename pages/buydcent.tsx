@@ -7,7 +7,7 @@ export default function BuyDcent() {
     return (
         <>
             <Head>
-                <title>XDCS - Buy D'Cent Wallet</title>
+                <title>XDCS - Buy D&apos;Cent Wallet</title>
                 <meta name="description" content="XDCS official website." />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />

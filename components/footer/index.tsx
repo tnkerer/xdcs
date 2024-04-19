@@ -32,7 +32,7 @@ const Footer = ({isLandingPage}: Props) => {
       </div> */}
 
       <div className={styles.optionsContainer}>
-        <Link href={'/privacypolicy'}>
+        <Link href={'/policy'}>
           <div className={styles.option}>
             Privacy Policy
           </div>
