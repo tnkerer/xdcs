@@ -52,7 +52,7 @@ const LandingPage = () => {
           </Slide>
 
           <Slide>
-            <div>
+            <div id='dcentSection'>
               <DcentSection />
             </div>
           </Slide>

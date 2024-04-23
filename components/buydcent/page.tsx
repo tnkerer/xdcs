@@ -10,8 +10,7 @@ const BuyDcentPage = (props: Props) => {
     <div className={styles.container}>
       <div className={styles.videoContainer}>
         <div className={styles.embed}>
-          {/* <iframe width="1000" height="577" src="https://www.youtube.com/embed/izGwDsrQ1eQ" title="George Michael - Careless Whisper (Official Video)" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
-          <video width="1000" height="577" controls>
+          <video controls>
             <source src="assets/dcent/dcent.mp4" type="video/mp4" />
             {/* Add additional source elements for other video formats if needed */}
             Your browser does not support the video tag.

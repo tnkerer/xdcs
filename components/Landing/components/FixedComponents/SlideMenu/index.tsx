@@ -93,7 +93,7 @@ const SlideBar = () => {
                 actualSlide == 3 ? styles.selected : styles.notSelected
               }
               onClick={() => {
-                const element = document.getElementById('whatWeDoPage')
+                const element = document.getElementById('dcentSection')
 
                 if (element) {
                   element.scrollIntoView({ behavior: 'smooth' })
