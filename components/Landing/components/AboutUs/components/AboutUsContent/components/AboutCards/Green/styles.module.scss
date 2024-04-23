@@ -2,6 +2,24 @@
   width: 240px;
   height: 245px;
   z-index: 10;
+  transition: 0.4s;
+
+  &:hover {
+    background: linear-gradient(135deg, rgba(176, 255, 174, 0.8) 0%, rgba(125, 255, 122, 0.8) 28.09%, rgba(3, 131, 0, 0.8) 100%);
+
+  .paddingContainer {
+    padding: 10px 20px 0px 25px;
+    scale: 1.08;
+  }
+
+  .imageContainer {
+    filter: brightness(100);
+  }
+
+  .textContainer {
+    font-size: 13px;
+  }
+  }
 
   @media (max-width: 1150px) {
     width: 200px;
@@ -44,22 +62,5 @@
         font-weight: 300;
       }
     }
-  }
-}
-
-.greenContainer:hover {
-  background: linear-gradient(135deg, rgba(176, 255, 174, 0.8) 0%, rgba(125, 255, 122, 0.8) 28.09%, rgba(3, 131, 0, 0.8) 100%);
-
-  .paddingContainer {
-    padding: 10px 20px 0px 25px;
-    scale: 1.08;
-  }
-
-  .imageContainer {
-    filter: brightness(100);
-  }
-
-  .textContainer {
-    font-size: 13px;
   }
 }

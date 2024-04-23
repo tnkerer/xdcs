@@ -11,6 +11,8 @@ const DcentSection = (props: Props) => {
   return (
     <div className={styles.container}>
       <div className={styles.centerContainer}>
+        <div className={styles.mobilebg} />
+
         <div className={styles.buyBox}>
           <div className={styles.title}>
             D&lsquo;CENT Biometric Wallet
