@@ -48,7 +48,8 @@
 }
 
 .purpleContainer:hover {
-  background: linear-gradient(134.83deg, #9D5EB9 0%, #662483 50%, #40005C 100%);
+  background: linear-gradient(135deg, rgba(49, 101, 170, 1) 0%, rgb(74, 152, 255) 100%);
+  box-shadow: 0px 0px 12px 0px rgba(65, 175, 255, 1);
 
   .paddingContainer {
     padding: 10px 20px 0px 25px;
