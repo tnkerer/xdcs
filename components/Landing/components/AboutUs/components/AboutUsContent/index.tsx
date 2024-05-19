@@ -47,8 +47,8 @@ const AboutUsContent = () => {
           <div className={styles.cardsGrid}>
             <GreenAboutCard title='Strategy' text='Our primary mission is to draft and build a tailored Web3 strategy that will catalyze business growth' image={trust} />
             <PurpleAboutCard title='Scalability' text='Our tools scale on demand with high maintainability and extensibility' image={scalability} />
-            <OrangeAboutCard title='Flexibility' text='We oversee network validators, enforce security practices, and developing on-chain apps' image={design} />
-            <RedAboutCard title='Innovation' text='Embrace innovation and secure your competitive edge by partnering with X Digital Capital Solutions' image={performance} />
+            <OrangeAboutCard title='Flexibility' text='We are at the forefront of technological adaptability, offering scalable solutions and customizable features that meet a evolving market' image={design} />
+            <RedAboutCard title='Innovation' text='We specialize in developing blockchain solutions that open new avenues for smart contracts and decentralized applications' image={performance} />
           </div>
 
           <div className={styles.mobileCardsGrid}>
@@ -71,11 +71,11 @@ const AboutUsContent = () => {
               </SwiperSlide>
 
               <SwiperSlide>            
-              <OrangeAboutCard title='Flexibility' text='We oversee network validators, enforce security practices, and developing on-chain apps' image={design} />
+              <OrangeAboutCard title='Flexibility' text='We are at the forefront of technological adaptability, offering scalable solutions and customizable features that meet a evolving market' image={design} />
               </SwiperSlide>
 
               <SwiperSlide>            
-              <RedAboutCard title='Innovation' text='Embrace innovation and secure your competitive edge by partnering with X Digital Capital Solutions' image={performance} />
+              <RedAboutCard title='Innovation' text='We specialize in developing blockchain solutions that open new avenues for smart contracts and decentralized applications' image={performance} />
               </SwiperSlide>
             </Swiper>
           </div>
