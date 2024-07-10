@@ -46,7 +46,7 @@ const BuyDcentPage = (props: Props) => {
             </div>
 
             <div className={styles.price}>
-              $129.00
+              $109.00
             </div>
           </div>
 
@@ -72,7 +72,7 @@ const BuyDcentPage = (props: Props) => {
             </div>
 
             <div className={styles.price}>
-              $129.00
+              $189.00
             </div>
           </div>
 
